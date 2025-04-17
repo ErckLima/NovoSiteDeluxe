@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New Deluxe Bh</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+          <a href="#novos">Novos</a>
+          <a href="#seminovos">Seminovos</a>
+          <a href="/">Upgrade</a>
+        </div>
+    </nav>
+    <header>
+        
+        <h1>iPhone Deluxe BH</h1>
+        <h3 id="seminovos">iPhones Seminovos</h3>
+        
+    </header>
+    <div class="sectionseminovos" >
+        {%for iphone in iphones%}
+            {% if iphone.tipo == 'SEMINOVO' %}
+                {% if iphone.ativo == true %}
+                    <div class="card">
+                        <div class="imagem_card">
+                            <img src="{{ url_for('static', filename='imagens/' + iphone.image) }}" alt="{{ iphone.name }}">
+                        </div>
+                        <div class="infos_card">
+                            <h3>{{ iphone.name }}</h3>
+                            <div class="colors">
+                                {% for color in iphone.colors %}
+                                    <span class="color" style="background-color: {{ color }}"></span>
+                                {% endfor %}
+                            </div>
+                            <div class="prices">
+                                {% if iphone.tem64 == true %}
+                                    <p class="armprice"><span class="armazenamento">64GB </span> <span class="valor_iphone">R${{ iphone.price_64 }}</span></p>
+                                {% endif %}
+                                {% if iphone.tem128 == true %}
+                                    <p class="armprice"><span class="armazenamento">128GB </span> <span class="valor_iphone">R${{ iphone.price_128 }}</span></p>
+                                {% endif %}
+                                {% if iphone.tem256 == true %}
+                                    <p class="armprice"><span class="armazenamento">256GB </span> <span class="valor_iphone">R${{ iphone.price_256 }}</span></p>
+                                {% endif %}
+                            </div>
+                        </div>
+                        <form class="acoes_card">
+                            <input type="hidden" name="NomeIphone" value="{{ iphone.name }}">
+
+                            <!-- <button class="comprar">COMPRAR</button>
+                            <button class="trocar">TROCAR IPHONE</button> -->
+
+                            <button class="comprar" >
+                                <a href="#" target="_blank">Comprar</a>
+                            </button>
+                            <button class="trocar">
+                                <a href="#" target="_blank">Trocar iphone</a>
+                            </button>
+                        </form>
+                    </div>
+                {% endif %}
+            {% endif %}
+        {% endfor %}
+    </div>
+
+<!-- -------------------------------------------------------------------------------------------------------- -->
+    <header>
+        <h1 id="novos">iPhones Novos</h1>
+        
+    </header>
+    <div class="sectionnovos" >
+        {%for iphone in iphones%}
+            {% if iphone.tipo == 'NOVO' %}
+                {% if iphone.ativo == true %}
+                    <div class="card_news">
+                        <div class="imagem_card">
+                            <img src="{{ url_for('static', filename='imagens/' + iphone.image) }}" alt="{{ iphone.name }}">
+                        </div>
+                        <div class="infos_card">
+                            <h3>{{ iphone.name }}</h3>
+                            <div class="colors">
+                                {% for color in iphone.colors %}
+                                    <span class="color" style="background-color: {{ color }}"></span>
+                                {% endfor %}
+                            </div>
+                            <div class="prices">
+                                {% if iphone.tem64 == true %}
+                                    <p class="armprice"><span class="armazenamento">64GB </span> <span class="valor_iphone">R${{ iphone.price_64 }}</span></p>
+                                {% endif %}
+                                {% if iphone.tem128 == true %}
+                                    <p class="armprice"><span class="armazenamento">128GB </span> <span class="valor_iphone">R${{ iphone.price_128 }}</span></p>
+                                {% endif %}
+                                {% if iphone.tem256 == true %}
+                                    <p class="armprice"><span class="armazenamento">256GB </span> <span class="valor_iphone">R${{ iphone.price_256 }}</span></p>
+                                {% endif %}
+                            </div>
+                        </div>
+                        <form class="acoes_card">
+                            <input type="hidden" name="NomeIphone" value="{{ iphone.name }}">
+
+                            <!-- <button class="comprar">COMPRAR</button>
+                            <button class="trocar">TROCAR IPHONE</button> -->
+
+                            <button class="comprar" >
+                                <a href="#" target="_blank">Comprar</a>
+                            </button>
+                            <button class="trocar">
+                                <a href="#" target="_blank" class="a_news">Trocar iphone</a>
+                            </button>
+                        </form>
+                    </div>
+                {% endif %}
+            {% endif %}
+        {% endfor %}
+    </div>
+    
+</body>
+</html>

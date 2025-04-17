@@ -1,0 +1,447 @@
+[
+  {
+    "name": "iPhone 11",
+    "ativo": true,
+    "image": "iPhone_11.webp",
+    "colors": [
+      "black",
+      "white",
+      "purple",
+      "red"
+    ],
+    "tipo": "SEMINOVO",
+    "price_64": "1.699,00",
+    "tem64": true,
+    "price_128": "1.999,00",
+    "tem128": true,
+    "price_256": "0",
+    "tem256": false
+  },
+  {
+    "name": "iPhone 11 Pro",
+    "ativo": true,
+    "image": "iPhone_11_Pro.webp",
+    "colors": [
+      "gold",
+      "#2e2e2e",
+      "silver"
+    ],
+    "tipo": "SEMINOVO",
+    "price_64": "2.399,00",
+    "tem64": true,
+    "price_128": "2.699,00",
+    "tem128": true,
+    "price_256": "0",
+    "tem256": false
+  },
+  {
+    "name": "iPhone 11 Pro Max",
+    "ativo": true,
+    "image": "iPhone_11_Pro_Max.webp",
+    "colors": [
+      "gold",
+      "#2e2e2e",
+      "silver"
+    ],
+    "tipo": "SEMINOVO",
+    "price_64": "2.549,00",
+    "tem64": true,
+    "price_128": "0",
+    "tem128": false,
+    "price_256": "2.849,00",
+    "tem256": true
+  },
+  {
+    "name": "iPhone 12",
+    "ativo": true,
+    "image": "iPhone_12.webp",
+    "colors": [
+      "blue",
+      "green",
+      "white",
+      "black",
+      "red"
+    ],
+    "tipo": "SEMINOVO",
+    "price_64": " 2.249,00",
+    "tem64": true,
+    "price_128": "2.599,00",
+    "tem128": true,
+    "price_256": "0",
+    "tem256": false
+  },
+  {
+    "name": "iPhone 12 Pro",
+    "ativo": true,
+    "image": "iPhone_12_Pro.webp",
+    "colors": [
+      "gold",
+      "#2e2e2e",
+      "silver",
+      "blue"
+    ],
+    "tipo": "SEMINOVO",
+    "price_64": "0",
+    "tem64": false,
+    "price_128": "2.899,00",
+    "tem128": true,
+    "price_256": "3.199,00",
+    "tem256": true
+  },
+  {
+    "name": "iPhone 12 Pro Max",
+    "ativo": true,
+    "image": "iPhone_12_Pro_Max.webp",
+    "colors": [
+      "gold",
+      "#2e2e2e",
+      "silver",
+      "blue"
+    ],
+    "tipo": "SEMINOVO",
+    "price_64": "0",
+    "tem64": false,
+    "price_128": "3.399,00",
+    "tem128": true,
+    "price_256": "3.699,00",
+    "tem256": true
+  },
+  {
+    "name": "iPhone 13",
+    "ativo": true,
+    "image": "iPhone_13.webp",
+    "colors": [
+      "blue",
+      "pink",
+      "white",
+      "yellow",
+      "red"
+    ],
+    "tipo": "SEMINOVO",
+    "price_64": " ",
+    "tem64": false,
+    "price_128": " 2.899,00",
+    "tem128": true,
+    "price_256": "3.299,00",
+    "tem256": true
+  },
+  {
+    "name": "iPhone 13",
+    "ativo": true,
+    "image": "iPhone_13.webp",
+    "colors": [
+      "blue",
+      "pink",
+      "white",
+      "yellow",
+      "red"
+    ],
+    "tipo": "NOVO",
+    "price_64": "0",
+    "tem64": false,
+    "price_128": "3.699,00",
+    "tem128": true,
+    "price_256": "4.599,00",
+    "tem256": true
+  },
+  {
+    "name": "iPhone 13 Pro",
+    "ativo": true,
+    "image": "iPhone_13_Pro.webp",
+    "colors": [
+      "blue",
+      "silver",
+      "gold",
+      "#2e2e2e"
+    ],
+    "tipo": "SEMINOVO",
+    "price_64": "0",
+    "tem64": false,
+    "price_128": "3.799,00",
+    "tem128": true,
+    "price_256": "3.999,00",
+    "tem256": true
+  },
+  {
+    "name": "iPhone 13 Pro Max",
+    "ativo": true,
+    "image": "iPhone_13_Pro_Max.webp",
+    "colors": [
+      "blue",
+      "silver",
+      "gold",
+      "#2e2e2e"
+    ],
+    "tipo": "SEMINOVO",
+    "price_64": "0",
+    "tem64": false,
+    "price_128": "3.999,00",
+    "tem128": true,
+    "price_256": "4.449,00",
+    "tem256": true
+  },
+  {
+    "name": "iPhone 14",
+    "ativo": true,
+    "image": "iPhone_14.webp",
+    "colors": [
+      "blue",
+      "purple",
+      "white",
+      "yellow",
+      "red"
+    ],
+    "tipo": "SEMINOVO",
+    "price_64": "0",
+    "tem64": false,
+    "price_128": "3.299,00",
+    "tem128": true,
+    "price_256": "3.799,00",
+    "tem256": true
+  },
+  {
+    "name": "iPhone 14",
+    "ativo": true,
+    "image": "iPhone_14.webp",
+    "colors": [
+      "blue",
+      "purple",
+      "white",
+      "yellow",
+      "red"
+    ],
+    "tipo": "NOVO",
+    "price_64": "0",
+    "tem64": false,
+    "price_128": "4.299,0",
+    "tem128": true,
+    "price_256": "4.799,0",
+    "tem256": true
+  },
+  {
+    "name": "iPhone 14 Plus",
+    "ativo": false,
+    "image": "iPhone_14_Plus.webp",
+    "colors": [
+      "blue",
+      "purple",
+      "white",
+      "yellow",
+      "red"
+    ],
+    "tipo": "SEMINOVO",
+    "price_64": "0",
+    "tem64": false,
+    "price_128": "0",
+    "tem128": false,
+    "price_256": "0",
+    "tem256": false
+  },
+  {
+    "name": "iPhone 14 Pro",
+    "ativo": true,
+    "image": "iPhone_14_Pro.webp",
+    "colors": [
+      "purple",
+      "gold",
+      "silver",
+      "black"
+    ],
+    "tipo": "SEMINOVO",
+    "price_64": "0",
+    "tem64": false,
+    "price_128": "4.399,00",
+    "tem128": true,
+    "price_256": "4.899,00",
+    "tem256": true
+  },
+  {
+    "name": "iPhone 14 Pro Max",
+    "ativo": true,
+    "image": "iPhone_14_Pro_Max.webp",
+    "colors": [
+      "purple",
+      "gold",
+      "silver",
+      "black"
+    ],
+    "tipo": "SEMINOVO",
+    "price_64": "0",
+    "tem64": false,
+    "price_128": "5.149,00",
+    "tem128": true,
+    "price_256": "5.399,00",
+    "tem256": true
+  },
+  {
+    "name": "iPhone 15",
+    "ativo": true,
+    "image": "iPhone_15.webp",
+    "colors": [
+      "black",
+      "blue",
+      "green",
+      "yellow",
+      "pink"
+    ],
+    "tipo": "SEMINOVO",
+    "price_64": "0",
+    "tem64": false,
+    "price_128": "4.399,00",
+    "tem128": true,
+    "price_256": "4.799,00",
+    "tem256": true
+  },
+  {
+    "name": "iPhone 15",
+    "ativo": true,
+    "image": "iPhone_15.webp",
+    "colors": [
+      "black",
+      "blue",
+      "green",
+      "yellow",
+      "pink"
+    ],
+    "tipo": "NOVO",
+    "price_64": "0",
+    "tem64": false,
+    "price_128": "4.699,00",
+    "tem128": true,
+    "price_256": "5.899,00",
+    "tem256": true
+  },
+  {
+    "name": "iPhone 15 Plus",
+    "ativo": false,
+    "image": "iPhone_15_Plus.webp",
+    "colors": [
+      "black",
+      "blue",
+      "green",
+      "yellow",
+      "pink"
+    ],
+    "tipo": "SEMINOVO",
+    "price_64": "0",
+    "tem64": false,
+    "price_128": "0",
+    "tem128": false,
+    "price_256": "0",
+    "tem256": false
+  },
+  {
+    "name": "iPhone 15 Pro",
+    "ativo": true,
+    "image": "iPhone_15_Pro.webp",
+    "colors": [
+      "black",
+      "white",
+      "blue",
+      "#777777"
+    ],
+    "tipo": "SEMINOVO",
+    "price_64": "0",
+    "tem64": false,
+    "price_128": "5.399,00",
+    "tem128": true,
+    "price_256": "5.699,00",
+    "tem256": true
+  },
+  {
+    "name": "iPhone 15 Pro Max",
+    "ativo": true,
+    "image": "iPhone_15_Pro_Max.webp",
+    "colors": [
+      "black",
+      "white",
+      "blue",
+      "#777777"
+    ],
+    "tipo": "SEMINOVO",
+    "price_64": "0",
+    "tem64": false,
+    "price_128": "0",
+    "tem128": false,
+    "price_256": "6.399,00",
+    "tem256": true,
+    "price_512": "7.999,00",
+    "tem512": true
+  },
+  {
+    "name": "iPhone 16",
+    "ativo": true,
+    "image": "iPhone_16.webp",
+    "colors": [
+      "black",
+      "blue",
+      "green",
+      "yellow",
+      "pink"
+    ],
+    "tipo": "NOVO",
+    "price_64": "0",
+    "tem64": false,
+    "price_128": "5.249,00",
+    "tem128": true,
+    "price_256": "6.249,00",
+    "tem256": true
+  },
+  {
+    "name": "iPhone 16 Plus",
+    "ativo": false,
+    "image": "iPhone_16_Plus.webp",
+    "colors": [
+      "black",
+      "blue",
+      "green",
+      "yellow",
+      "pink"
+    ],
+    "tipo": "NOVO",
+    "price_64": "0",
+    "tem64": false,
+    "price_128": "0",
+    "tem128": false,
+    "price_256": "0",
+    "tem256": false
+  },
+  {
+    "name": "iPhone 16 Pro",
+    "ativo": true,
+    "image": "iPhone_16_Pro.webp",
+    "colors": [
+      "black",
+      "white",
+      "blue",
+      "#777777"
+    ],
+    "tipo": "NOVO",
+    "price_64": "0",
+    "tem64": false,
+    "price_128": "6.699,00",
+    "tem128": true,
+    "price_256": "7.349,00",
+    "tem256": true
+  },
+  {
+    "name": "iPhone 16 Pro Max",
+    "ativo": true,
+    "image": "iPhone_16_Pro_Max.webp",
+    "colors": [
+      "black",
+      "white",
+      "blue",
+      "#777777"
+    ],
+    "tipo": "NOVO",
+    "price_64": "0",
+    "tem64": false,
+    "price_128": "0",
+    "tem128": false,
+    "price_256": "7.999,00",
+    "tem256": true,
+    "price_512": "7.999,00",
+    "tem512": true
+  }
+]

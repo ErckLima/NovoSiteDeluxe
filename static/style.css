@@ -8,6 +8,16 @@
     --texto-principal: #ffffff;
     --texto-secundario: #c7c7cc;
 }
+.comprar a{
+    text-decoration: none;
+    color: inherit;
+}
+.trocar a{
+    text-decoration: none;
+}
+.a_news{
+    color: var(--texto-principal);
+}
 .navbar {
     background-color: #000; /* cor de fundo */
     padding: 10px 20px;
