@@ -4,9 +4,38 @@
     --cinza-medio: #d1d1d6;        /* cinza iOS */
     --azul-apple: #007aff;         /* azul padrão Apple */
     --cinza-card: #2c2c2e;         /* fundo dos cards tipo dark mode Apple */
+    --cinza--maisclaro-card: #484852;         /* fundo dos cards tipo dark mode Apple */
     --texto-principal: #ffffff;
     --texto-secundario: #c7c7cc;
 }
+.navbar {
+    background-color: #000; /* cor de fundo */
+    padding: 10px 20px;
+    width: 100%;
+    position: sticky;
+    top: 0;
+    border-radius: 10px;
+    z-index: 999;
+  }
+  
+  .navbar .container {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+
+  }
+  
+  .navbar a {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 18px;
+    transition: color 0.3s;
+  }
+  
+  .navbar a:hover {
+    color: #ccc;
+  }
 
 body{
     margin: 0px;
@@ -16,7 +45,7 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
 }
 
 .sectionseminovos{
@@ -25,6 +54,15 @@ body{
     gap: 10px;
     grid-template-columns: repeat(3, 1fr); /* 3 colunas iguais */
     /* border-top: 3px solid black; */
+}
+.sectionnovos{
+    display: grid;
+    gap: 10px;
+    grid-template-columns: repeat(3, 1fr); /* 3 colunas iguais */
+    background-color: var(--preto-suave);
+    color: var(--texto-principal);
+    border-radius: 10px;
+    padding: 10px;
 }
 header{
     text-align: center;
@@ -39,6 +77,20 @@ header h3{
     /* background-color: var(--cinza-card); */
     /* color: var(--texto-principal); */
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    min-width: 200px;
+    min-height: 400px;
+    border-radius: 10px;
+    margin: 10px;
+    display: grid;
+    grid-template-rows: 2fr 2fr 1fr; /* 3 colunas iguais */;
+    gap: 1px;
+}
+.card_news{
+    padding: 10px;
+    /* background-color: var(--cinza-card); */
+    /* color: var(--texto-principal); */
+    box-shadow: 0 0px 10px var(--cinza--maisclaro-card);
+    border: 0.5px solid var(--cinza-card);
     min-width: 200px;
     min-height: 400px;
     border-radius: 10px;
@@ -80,8 +132,12 @@ header h3{
 }
 .infos_card p{
     font-size: 18px;
-    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
     /* color: var(--texto-secundario); */
+}
+.armazenamento{
+    font-weight: bold;
+    margin-right: 10px;
 }
 .color {
     margin-left: 2px;
@@ -142,6 +198,11 @@ header h3{
         grid-template-columns: repeat(2, 1fr); /* 3 colunas iguais */
         /* border-top: 3px solid black; */
     }
+    .sectionnovos{
+        display: grid;
+        gap: 5px;
+        grid-template-columns: repeat(2, 1fr); /* 3 colunas iguais */
+    }
     .infos_card p{
         margin: 0px;
         margin-left: 10px;
@@ -173,6 +234,19 @@ header h3{
         grid-template-rows: 70% 30%; /* aqui está o segredo! */
 
     }
+    .card_news{
+        /* background-color: rgb(88, 88, 88); */
+        min-width: 300px;
+        min-height: 150px;
+        border-radius: 10px;
+        margin: 10px;
+        display: grid;
+        grid-template-areas: 
+        "foto info"
+        "foto ação";
+        grid-template-columns: 1fr 2fr;
+        grid-template-rows: 70% 30%; /* aqui está o segredo! */
+    }
     .imagem_card{
         grid-area: foto;
         border-radius: 10px;
@@ -192,9 +266,13 @@ header h3{
         height: 100%; /* <<< ISSO RESOLVE O PROBLEMA */
         align-self: stretch;
     }
+    .card_news > *{
+        height: 100%; /* <<< ISSO RESOLVE O PROBLEMA */
+        align-self: stretch;
+    }
 } 
 
-@media screen and (max-width: 679px) {
+@media screen and (max-width: 718px) {
     /* Estilos aplicados quando a largura da tela for 768px ou menos */
     .sectionseminovos{
         /* background-color: rgb(133, 133, 133); */
@@ -202,12 +280,22 @@ header h3{
         grid-template-columns: repeat(1, 1fr); /* 3 colunas iguais */
         /* border-top: 3px solid black; */
     }
+    .sectionnovos{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr); /* 3 colunas iguais */
+        padding: 5px;
+    }
     .card{
         /* background-color: rgb(88, 88, 88); */
         min-width: 300px;
         min-height: 150px;
         border-radius: 10px;
         
+    }
+    .card_news{
+        min-width: 300px;
+        min-height: 150px;
+        border-radius: 10px;
     }
     .color{
         margin: 0px;
